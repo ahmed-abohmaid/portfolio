@@ -3,11 +3,11 @@ import styles from "@/styles";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Links() {
+export default function BigLinks() {
   const pathname = usePathname();
 
   return (
-    <ul className="flex items-center gap-5 justify-between">
+    <ul className="hidden sm:flex items-center gap-5 justify-between">
       <li>
         <Link
           href="/"

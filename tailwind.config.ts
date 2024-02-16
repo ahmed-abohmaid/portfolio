@@ -14,6 +14,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      cursor: {
+        'newTab': 'url(/new-tab.png) 10 10,pointer;',
+      }
     },
   },
   plugins: [],
