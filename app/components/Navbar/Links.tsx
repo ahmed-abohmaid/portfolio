@@ -7,7 +7,7 @@ export default function Links() {
   const pathname = usePathname();
 
   return (
-    <ul className="flex gap-5 items-center justify-between">
+    <ul className="flex items-center gap-5 justify-between">
       <li>
         <Link
           href="/"

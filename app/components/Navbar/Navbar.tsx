@@ -10,7 +10,7 @@ type Props = {
 export default function Navbar({ window }: Props) {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
-    threshold: 0,
+    threshold: 20,
     target: window ? window() : undefined,
   });
 
@@ -20,10 +20,10 @@ export default function Navbar({ window }: Props) {
         styles.container
       } ${
         trigger &&
-        "bg-[rgba(255, 255, 255, 0.7)] backdrop-blur-[6px] rounded-3xl"
+        "bg-[rgba(255, 255, 255, 0.7)] backdrop-blur-[6px] rounded-3xl shadow mt-2"
       }`}
     >
-      <h1 className={`font-bold text-2xl ${styles.circleHighlight}`}>
+      <h1 className={`font-[500] text-2xl ${styles.circleHighlight}`}>
         Abohmaid
       </h1>
       <Links />
