@@ -26,6 +26,7 @@ export default function BigNavbar({
         onClick={handleMenuClick}
         className="py-6"
         animate={{
+          x: isTapping ? -8 : 0,
           y: isTapping ? 7 : 0,
         }}
         onTapStart={handleTappingStart}
